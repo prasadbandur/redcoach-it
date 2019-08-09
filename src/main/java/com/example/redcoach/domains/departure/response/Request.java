@@ -1,10 +1,15 @@
 package com.example.redcoach.domains.departure.response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 @lombok.Data
 public class Request {
-    private String CID;
+    @JsonProperty(value = "CID")
+    private String cid;
 
-    private String U_NAME;
+    @JsonProperty(value = "U_NAME")
+    private String uName;
 
-    private String U_PASSWORD;
+    @JsonProperty(value = "U_PASSWORD")
+    private String uPassword;
 }

@@ -1,6 +1,5 @@
 package com.example.redcoach.domains.departure.response;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
@@ -14,5 +13,5 @@ public class DepartureResponse {
 
     private List<Data> data;
 
-    //private Request request;
+    private Request request;
 }
